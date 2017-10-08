@@ -6,9 +6,6 @@ php:
   - 7.0
   - 7.1
 
-before_install:
-  - mysql -e 'CREATE DATABASE travis;'
-
 env:
   global:
     - DB_DATABASE=travis
