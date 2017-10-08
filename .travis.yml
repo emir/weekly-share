@@ -1,9 +1,21 @@
 language: php
 
+sudo: false
+
 php:
   - 7.0
   - 7.1
 
-install: composer install
+env:
+  global:
+    - APP_ENV=testing
+    - APP_DEBUG=true
+    - APP_KEY=base64:R5lB7f1s3e+wtDAOIx1+4kextwoI6zoLNf8TfaOLExM=
+    - DB_CONNECTION=sqlite
+
+before_script:
+  - composer install --prefer-source --no-interaction
+  - php artisan key:generate
+  - php artisan migrate --seed --no-interaction -vvv
 
 after_script: php vendor/bin/coveralls
