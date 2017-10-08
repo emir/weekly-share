@@ -23,5 +23,7 @@ before_script:
 script:
   - vendor/bin/phpunit --coverage-clover=coverage.xml
 
+after_script: php vendor/bin/coveralls
+
 services:
   - mysql
