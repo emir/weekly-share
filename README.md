@@ -1,6 +1,11 @@
 Add URLs to Weekly Services
 =================
 
+[![Latest Stable Version](https://poser.pugx.org/emir/weekly/v/stable)](https://packagist.org/packages/emir/weekly)
+[![Build Status](https://travis-ci.org/emir/weekly-share.svg?branch=master)](https://travis-ci.org/emir/weekly-share)
+[![Coverage Status](https://coveralls.io/repos/github/emir/weekly-share/badge.svg?branch=master)](https://coveralls.io/github/emir/weekly-share?branch=master)
+[![License](https://poser.pugx.org/emir/weekly/license)](https://packagist.org/packages/emir/weekly)
+
 Installation
 ------------
 
