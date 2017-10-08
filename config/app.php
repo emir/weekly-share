@@ -169,6 +169,11 @@ return [
          */
 
         /*
+         * Domain Service Providers...
+         */
+        App\Link\LinkServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
