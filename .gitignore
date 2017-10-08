@@ -12,3 +12,5 @@ yarn-error.log
 .env
 /coverage
 composer.lock
+/build
+coverage.xml

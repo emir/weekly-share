@@ -12,10 +12,17 @@ env:
     - APP_DEBUG=true
     - APP_KEY=base64:R5lB7f1s3e+wtDAOIx1+4kextwoI6zoLNf8TfaOLExM=
     - DB_CONNECTION=sqlite
+    - CACHE_DRIVER=file
+    - SESSION_DRIVER=file
+    - QUEUE_DRIVER=sync
 
 before_script:
+  - phpenv config-rm xdebug.ini
+  - cp .env.example .env
+  - composer self-update
   - composer install --prefer-source --no-interaction
   - php artisan key:generate
   - php artisan migrate --seed --no-interaction -vvv
 
-after_script: php vendor/bin/coveralls
+script:
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
