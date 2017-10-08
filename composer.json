@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "emir/weekly",
+    "description": "Share URL to weekly services",
+    "keywords": ["weekly", "url"],
     "license": "MIT",
     "type": "project",
     "require": {
